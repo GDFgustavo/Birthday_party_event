@@ -1,8 +1,9 @@
 @use 'variaveis';
 @use 'hero';
+@use 'details';
 
 
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,8 +11,13 @@
     list-style: none;
 }
 
+h1 {
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+}
+
 body {
-    background-color: variaveis.$corDeFundo;
+    background-color: variaveis.$corPrincipal;
 }
 
 .container {
