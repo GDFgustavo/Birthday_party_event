@@ -12,7 +12,21 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header class="hero">
+
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    10d 12h 23m 15s
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
         <div class="container">
             <img class="hero__title" src="./images/img_title.svg" alt="Piloto por um dia">
             <div class="hero__info">
@@ -38,23 +52,49 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </section>
     
     <section class="details">
-        <img class="details__img" data-aos="fade-right" src="./images/img_atividades.svg" alt="">
+        <img class="details__img" data-aos="fade-right" data-aos-duration="500" src="./images/img_atividades.svg" alt="">
         <div class="container">
             <ul class="details__cards">
                 <li class="details__cards__item">
-                    <h1>Treinos</h1>
+                    <h2>Treinos</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi excepturi recusandae facilis voluptas, laudantium quasi porro aspernatur dolores nam.</p>
                 </li>
                 <li class="details__cards__item">
-                    <h1>Classificação</h1>
+                    <h2>Classificação</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi excepturi recusandae facilis voluptas, laudantium quasi porro aspernatur dolores nam.</p>
                 </li>
                 <li class="details__cards__item">
-                    <h1>Corrida</h1>
+                    <h2>Corrida</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi excepturi recusandae facilis voluptas, laudantium quasi porro aspernatur dolores nam.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="photos">
+        <div class="content">
+            <h2>Fotos do local</h2>
+            <ul class="photos__cards">
+                <li class="photos__cards__item">
+                    <img data-aos="fade-up" data-aos-duration="500" src="./images/photos_img6.jpg" alt="">
+                </li>
+                <li class="photos__cards__item">
+                    <img data-aos="fade-up" data-aos-duration="500" src="./images/photos_img5.jpg" alt="">
+                </li>
+                <li class="photos__cards__item">
+                    <img data-aos="fade-up" data-aos-duration="500" src="./images/photos_img4.jpg" alt="">
+                </li>
+                <li class="photos__cards__item">
+                    <img data-aos="fade-up" data-aos-duration="500" src="./images/photos_img3.jpg" alt="">
+                </li>
+                <li class="photos__cards__item">
+                    <img data-aos="fade-up" data-aos-duration="500" src="./images/photos_img2.jpg" alt="">
+                </li>
+                <li class="photos__cards__item">
+                    <img data-aos="fade-up" data-aos-duration="500" src="./images/photos_img1.jpg" alt="">
                 </li>
             </ul>
         </div>

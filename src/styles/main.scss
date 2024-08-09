@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'details';
+@use 'photos';
 
 
 * {
@@ -11,13 +12,19 @@
     list-style: none;
 }
 
-h1 {
+h2 {
     font-family: "Do Hyeon", sans-serif;
     font-weight: 400;
 }
 
 body {
     background-color: variaveis.$corPrincipal;
+}
+
+.content {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .container {

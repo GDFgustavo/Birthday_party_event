@@ -1,0 +1,45 @@
+@use 'variaveis';
+
+.photos {
+    padding-top: 72px;
+    padding-bottom: 124px;
+    text-align: center;
+    
+    h2 {
+        font-size: 56px;
+        padding-bottom: 45px;
+        color: variaveis.$corDoTexto;
+    }
+    
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+
+        &__item {
+
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {
+
+        &__cards {
+            grid-template-columns:  1fr 1fr;
+        }
+    }
+
+    @media (max-width: 640px) {
+
+        h2 {
+            font-size: 40px;
+        }
+
+        &__cards {
+            grid-template-columns:  1fr;
+        }
+    }
+}
