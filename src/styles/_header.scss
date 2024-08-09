@@ -1,0 +1,44 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: variaveis.$corPrincipal;
+    color: variaveis.$corDoTexto;
+
+    &__container {
+        padding: 4px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__item {
+            list-style: none;
+            margin: 5px;
+        }
+
+        span {
+            font-size: 24px;
+            font-weight: 700;
+            padding: 8px;
+            border-radius: 10px;
+            background: variaveis.$corDeFundo-2;
+        }
+    }
+
+    @media (max-width: 640px) {
+        
+        &__container {
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
